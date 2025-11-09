@@ -310,59 +310,59 @@ shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Macrocuencas_BWII_BH_IA
 
 
 MAM_BW_Indice_Combinado_1.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\MAM_BW_Indice_Combinado_1.shp bw_data.bw_MAM_BW_Indice_Combinado_1 > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\MAM_BW_Indice_Combinado_1.sql
 
 
 Marzo_BW_Frecuencia_Sequias_VIDECI.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Marzo_BW_Frecuencia_Sequias_VIDECI.shp bw_data.bw_Marzo_BW_Frecuencia_Sequias_VIDECI > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Marzo_BW_Frecuencia_Sequias_VIDECI.sql
 
 
 Marzo_BWII_BH_QA.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Marzo_BWII_BH_QA.shp bw_data.bw_Marzo_BWII_BH_QA > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Marzo_BWII_BH_QA.sql
 
 
 Mayo_BW_Frecuencia_Sequias_VIDECI.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Mayo_BW_Frecuencia_Sequias_VIDECI.shp bw_data.bw_Mayo_BW_Frecuencia_Sequias_VIDECI > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Mayo_BW_Frecuencia_Sequias_VIDECI.sql
 
 
 Mayo_BWII_BH_QA.shp Media_BWII_BH_QA.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Mayo_BWII_BH_QA.shp Media_BWII_BH_QA.shp bw_data.bw_Mayo_BWII_BH_QA.shp Media_BWII_BH_QA > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Mayo_BWII_BH_QA.shp Media_BWII_BH_QA.sql
 
 
 mediano_plazo_precipitacion_BW_Cambio_PPT_Sequia.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\mediano_plazo_precipitacion_BW_Cambio_PPT_Sequia.shp bw_data.bw_mediano_plazo_precipitacion_BW_Cambio_PPT_Sequia > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\mediano_plazo_precipitacion_BW_Cambio_PPT_Sequia.sql
 
 
 mediano_plazo_precipitacion_BW_Proyeccion_P.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\mediano_plazo_precipitacion_BW_Proyeccion_P.shp bw_data.bw_mediano_plazo_precipitacion_BW_Proyeccion_P > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\mediano_plazo_precipitacion_BW_Proyeccion_P.sql
 
 
 mediano_plazo_temperatura_BW_Cambio_T_Sequia_.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\mediano_plazo_temperatura_BW_Cambio_T_Sequia_.shp bw_data.bw_mediano_plazo_temperatura_BW_Cambio_T_Sequia_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\mediano_plazo_temperatura_BW_Cambio_T_Sequia_.sql
 
 
 Municipios_BW_Indice_Combinado_1.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Municipios_BW_Indice_Combinado_1.shp bw_data.bw_Municipios_BW_Indice_Combinado_1 > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Municipios_BW_Indice_Combinado_1.sql
 
 
 Noviembre_BW_Frecuencia_Sequias_VIDECI.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Noviembre_BW_Frecuencia_Sequias_VIDECI.shp bw_data.bw_Noviembre_BW_Frecuencia_Sequias_VIDECI > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Noviembre_BW_Frecuencia_Sequias_VIDECI.sql
 
 
 Noviembre_BWII_BH_QA.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Noviembre_BWII_BH_QA.shp bw_data.bw_Noviembre_BWII_BH_QA > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Noviembre_BWII_BH_QA.sql
 
 
 Nubosidad_BWII_Clima_BH.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Nubosidad_BWII_Clima_BH.shp bw_data.bw_Nubosidad_BWII_Clima_BH > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Nubosidad_BWII_Clima_BH.sql
 
 
 Octubre_BW_Frecuencia_Sequias_VIDECI.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Octubre_BW_Frecuencia_Sequias_VIDECI.shp bw_data.bw_Octubre_BW_Frecuencia_Sequias_VIDECI > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Octubre_BW_Frecuencia_Sequias_VIDECI.sql
 
 
 Octubre_BWII_BH_QA.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\ bw_data.bw_ > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\.sql
+shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Octubre_BWII_BH_QA.shp bw_data.bw_Octubre_BWII_BH_QA > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Octubre_BWII_BH_QA.sql
 
 
 Precipitacion_BWII_BH_PPT.shp 
