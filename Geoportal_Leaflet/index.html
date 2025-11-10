@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>BW_Geoportal</title>
-		<meta charset="utf-8">
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>BW_Geoportal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.groupedlayercontrol@0.6.1/dist/leaflet.groupedlayercontrol.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.groupedlayercontrol@0.6.1/dist/leaflet.groupedlayercontrol.min.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+</head>
 
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-	</head>
+<body>
+  <div id="sidebar">
+    <h2>BW Geoportal</h2>
 
-	<body>
-		<div id="map">
-			<script src="js/maps.js"></script>
-		</div>
-	</body>
+    <div id="legend">
+      <h3>Leyenda</h3>
+      <ul>
+        <li><span class="legend-color" style="background:#ff0000;"></span> Puntos de interés</li>
+        <li><span class="legend-color" style="background:#0000ff;"></span> Rutas</li>
+      </ul>
+    </div>
 
+    <div id="search">
+      <h3>Buscador</h3>
+      <input type="text" id="searchBox" placeholder="Buscar lugar...">
+      <button onclick="searchLocation()">Buscar</button>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="js/maps.js"></script>
+</body>
 </html>
