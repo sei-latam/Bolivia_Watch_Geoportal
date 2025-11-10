@@ -185,10 +185,6 @@ corto_plazo_temperatura_BW_Cambio_T_Sequia.shp
 shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\corto_plazo_temperatura_BW_Cambio_T_Sequia.shp bw_data.bw_corto_plazo_temperatura_BW_Cambio_T_Sequia > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\corto_plazo_temperatura_BW_Cambio_T_Sequia.sql
 
 
-Country_border_BW_ENSO.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Country_border_BW_ENSO.shp bw_data.bw_Country_border_BW_ENSO > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Country_border_BW_ENSO.sql
-
-
 Diciembre_BW_Frecuencia_Sequias_VIDECI.shp 
 shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Diciembre_BW_Frecuencia_Sequias_VIDECI.shp bw_data.bw_Diciembre_BW_Frecuencia_Sequias_VIDECI > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Diciembre_BW_Frecuencia_Sequias_VIDECI.sql
 
@@ -421,10 +417,6 @@ SON_BW_Indice_Combinado_1.shp
 shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\SON_BW_Indice_Combinado_1.shp bw_data.bw_SON_BW_Indice_Combinado_1 > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\SON_BW_Indice_Combinado_1.sql
 
 
-SST_Promedio_BW_ENSO.shp 
-shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\SST_Promedio_BW_ENSO.shp bw_data.bw_SST_Promedio_BW_ENSO > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\SST_Promedio_BW_ENSO.sql
-
-
 T_proyeccion_2030__BW.shp 
 shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\T_proyeccion_2030__BW.shp bw_data.bw_T_proyeccion_2030__BW > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\T_proyeccion_2030__BW.sql
 
@@ -440,61 +432,6 @@ shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Temperatura_BWII_Clima_
 Viento_BWII_Clima_BH.shp 
 shp2pgsql -s 4326 -I C:\Users\USUARIO\Desktop\Shapefiles\Viento_BWII_Clima_BH.shp bw_data.bw_Viento_BWII_Clima_BH > C:\Users\USUARIO\Documents\GitHub\Bolivia_Watch_Geoportal\PostgreSQL_PostGIS\Viento_BWII_Clima_BH.sql
 
-
 */
-
--- Rename table GLWD
-ALTER TABLE IF EXISTS water_data.sa_glwd_main_class
-    RENAME TO sa_glwd;
-
-SELECT country, ST_Transform( geom, 4326)
-FROM water_data.sa_countries
-WHERE country = 'Colombia';
-
-SELECT Count(*)
-FROM water_data.sa_gloric;
-
-SELECT SUM (elevation)
-FROM water_data.sa_hydrolakes
-WHERE country_1 = 'Brazil';
-
-SELECT municipali, Count(*)
-FROM water_data.sa_slau
-GROUP BY municipali;
-
-/*
---- Create a table with fields
-CREATE TABLE water_categories(Hybas_ID int, water_description varchar(30));
-
---- Modify users and fields
-ALTER TABLE IF EXISTS public.water_categories
-    ALTER COLUMN hybas_id SET NOT NULL;
-ALTER TABLE IF EXISTS public.water_categories
-    ALTER COLUMN water_description SET NOT NULL;
-ALTER TABLE IF EXISTS public.water_categories
-    ADD PRIMARY KEY (hybas_id);
-
---- Delete table with fields
-DROP TABLE water_categories;
-
---- Insert data and rows into water_categories
-INSERT INTO water_categories(hybas_id,water_description) VALUES(123456,'Main Basin');
-INSERT INTO water_categories(hybas_id,water_description) VALUES(7890,'Basin2');
-
---- Update data
-UPDATE water_categories SET water_description = 'Basin' WHERE hybas_id = 123456;
-
---- Delete ROWS
-DELETE FROM water_categories WHERE hybas_id = 123456;
-DELETE FROM water_categories WHERE hybas_id = 7890;
-
-CREATE SCHEMA water_data
-    AUTHORIZATION postgres;
-
---- Delete DATABASE
-drop DATABASE master_gdb;	
-
---- delete user with permissions 
-drop ROLE SUPPORT;
 
 */
