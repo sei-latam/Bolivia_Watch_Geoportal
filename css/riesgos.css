@@ -9,7 +9,9 @@
 /*=====                                                              Apache-2.0 license                                                           =====*/
 /*=====================================================================================================================================================*/
 
-/* === Base general === */
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------   Start Main  ------------------------------------------------------------------------*/
+/*=====================================================================================================================================================*/
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -17,12 +19,14 @@ body {
   color: #333;
 }
 
-/* === Encabezado institucional === */
-.encabezado {
+/*---------------------------    Start Header  ----------------------------------------------------------------------------------*/
+.header {
   background-color: #ffffff;
   padding: 1.5rem 3rem;
 }
+/*---------------------------    End Header  ----------------------------------------------------------------------------------*/
 
+/*---------------------------    Start Logos  ----------------------------------------------------------------------------------*/
 .logos {
   display: flex;
   align-items: center;
@@ -35,8 +39,9 @@ body {
   height: 60px;
   object-fit: contain;
 }
+/*---------------------------   End Logos ----------------------------------------------------------------------------------*/
 
-/* === Banner principal === */
+/*---------------------------   Start Banner  ----------------------------------------------------------------------------------*/
 .banner {
   position: relative;
   width: 100%;
@@ -53,8 +58,10 @@ body {
   height: auto;
   display: block;
 }
+/*---------------------------   End Banner ----------------------------------------------------------------------------------*/
 
-.titulo-banner {
+/*---------------------------   Start Titles  ----------------------------------------------------------------------------------*/
+.title-banner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,9 +79,18 @@ body {
   font-size: 1.8rem;
   line-height: 1.4;
 }
+/*---------------------------  End Titles  ----------------------------------------------------------------------------------*/
 
-/* === Contenido principal === */
-.contenido {
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------   End Main  ------------------------------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  Start Section 'Sobre el proyecto' ---------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+.content {
   max-width: 1400px;
   margin: 3rem auto;
   padding: 1.5rem 1.75rem 2rem;
@@ -83,97 +99,43 @@ body {
   border-radius: 8px;
 }
 
-.contenido h2 {
+.content h2 {
   font-size: 1.8rem;
   color: #B54900;
   margin-bottom: 1.5rem;
   text-align: justify;
 }
 
-.contenido h2:hover {
+.content h2:hover {
   text-decoration: underline;
   color: #B54900;
 }
 
-.contenido p {
+.content p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   text-align: justify;
 }
 
-/* === Enlaces dentro del texto === */
-.contenido a {
+.content a {
   color: #bd4e0c;
   text-decoration: none;
 }
 
-.contenido a:hover {
+.content a:hover {
   text-decoration: underline;
   color: #bd4e0c;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .panel-climatico {
-    grid-template-columns: 1fr;
-  }
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  End Section 'Sobre el proyecto' -----------------------------------------------------*/
+/*=====================================================================================================================================================*/
 
-  .clima-sidebar {
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-  }
 
-  .mapa-climatico iframe {
-    height: 420px;
-  }
-}
-
-/* === Responsivo para tablet y móvil === */
-@media (max-width: 768px) {
-  .encabezado {
-    padding: 1rem;
-  }
-
-  .logos img {
-    height: 40px;
-  }
-
-  .titulo-banner h1 {
-    font-size: 1.6rem;
-  }
-
-  .contenido {
-    padding: 2rem 1rem;
-  }
-
-  .contenido h2 {
-    font-size: 1.4rem;
-  }
-
-  .contenido p {
-    font-size: 0.95rem;
-  }
-
-  .botones-cuencas .boton-cuenca {
-    font-size: 0.95rem;
-    padding-left: 2.5rem;
-    background-position: 8px center;
-    background-size: 18px 18px;
-  }
-}
-
-/* Responsivo */
-@media (max-width: 1024px) {
-  .clima-panel {
-    grid-template-columns: 1fr;
-  }
-
-  .clima-mapa iframe {
-    height: 420px;
-  }
-}
-
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  Start Section 'SST y ENSO' ---------------------------------------------------*/
+/*=====================================================================================================================================================*/
 
 .panel-enso-global {
   max-width: 1400px;
@@ -190,25 +152,25 @@ body {
   gap: 2rem;
 }
 
-.enso-izquierda {
+.enso-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.enso-simbologia h3 {
+.enso-symbols h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-.enso-simbologia ul {
+.enso-symbols ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.enso-simbologia li {
+.enso-symbols li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -225,7 +187,7 @@ body {
   display: inline-block;
 }
 
-.enso-botones {
+.enso-buttoms {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -254,35 +216,30 @@ body {
   border-color: #B54900;
 }
 
-.enso-imagen img {
+.enso-image img {
   width: 100%;
   border-radius: 6px;
   border: 1px solid #ccc;
 }
 
-.enso-mapa iframe {
+.enso-map iframe {
   width: 100%;
   height: 600px;
   border-radius: 8px;
   border: 1px solid #ccc;
 }
 
-/* Responsivo */
-@media (max-width: 1024px) {
-  .enso-layout {
-    grid-template-columns: 1fr;
-  }
 
-  .enso-mapa iframe {
-    height: 420px;
-  }
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  End Section 'SST y ENSO' -----------------------------------------------------*/
+/*=====================================================================================================================================================*/
 
-  .enso-btn {
-    flex: 1 1 100%;
-  }
-}
 
-.panel-sequia-mensual {
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  Start Section 'Reporte sequia VIDECI' ---------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+.panel-drought-monthly {
   max-width: 1400px;
   margin: 3rem auto;
   padding: 1.5rem;
@@ -291,19 +248,19 @@ body {
   box-shadow: 0 2px 14px rgba(0,0,0,0.06);
 }
 
-.sequia-layout {
+.drought-layout {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 2rem;
 }
 
-.sequia-meses {
+.drought-months {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.sequia-meses h3 {
+.drought-months h3 {
   font-size: 1rem;
   margin-bottom: 1rem;
   color: #333;
@@ -311,7 +268,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.mes-btn {
+.month-btn {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -322,40 +279,113 @@ body {
   text-align: left;
 }
 
-.mes-btn:hover {
+.month-btn:hover {
   background-color: #B54900;
   color: #fff;
 }
 
-.mes-btn.active {
-  background-color: #003f6b;
+.month-btn.active {
+  background-color: #B54900;
   color: #fff;
-  border-color: #003f6b;
+  border-color: #B54900;
 }
 
-.sequia-mapa iframe {
+.drought-map iframe {
   width: 100%;
   height: 600px;
   border-radius: 8px;
   border: 1px solid #ccc;
 }
 
-/* Responsivo */
-@media (max-width: 1024px) {
-  .sequia-layout {
-    grid-template-columns: 1fr;
-  }
 
-  .sequia-mapa iframe {
-    height: 420px;
-  }
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  End Section 'Reporte sequia VIDECI' -----------------------------------------------------*/
+/*=====================================================================================================================================================*/
 
-  .mes-btn {
-    text-align: center;
-  }
+
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  Start Section 'Sequia SPI' ---------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+.panel-drought-spi {
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
 }
 
-.panel-sequia-spei {
+.spi-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+}
+
+.spi-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.spi-controls h3 {
+  font-size: 1.2rem;
+  color: #B54900;
+  margin-bottom: 0.5rem;
+}
+
+.spi-navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.spi-navigation button {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.spi-navigation button:hover {
+  background-color: #B54900;
+  color: #fff;
+}
+
+.spi-message p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.spi-map iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  End Section 'Sequia SPI' -----------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  Start Section 'Sequia SPEI' ---------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+.panel-drought-spei {
   max-width: 1400px;
   margin: 3rem auto;
   padding: 2rem;
@@ -370,25 +400,25 @@ body {
   gap: 2rem;
 }
 
-.spei-controles {
+.spei-controls {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
 }
 
-.spei-controles h3 {
+.spei-controls h3 {
   font-size: 1.2rem;
   color: #B54900;
   margin-bottom: 0.5rem;
 }
 
-.spei-navegacion {
+.spei-navigation {
   display: flex;
   gap: 1rem;
 }
 
-.spei-navegacion button {
+.spei-navigation button {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -399,13 +429,14 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.spei-navegacion button:hover {
+.spei-navigation button:hover {
   background-color: #B54900;
   color: #fff;
 }
 
-.spei-mensaje p {
-  font-size: 0.95rem;
+.spei-message p {
+  font-size: 0.9rem;
+  font-weight: bold;
   color: #333;
   background-color: #fafafa;
   padding: 1rem;
@@ -413,24 +444,103 @@ body {
   border: 1px solid #ddd;
 }
 
-.spei-mapa iframe {
+.spei-map iframe {
   width: 100%;
   height: 600px;
   border-radius: 8px;
   border: 1px solid #ccc;
 }
 
-/* Responsivo */
-@media (max-width: 1024px) {
-  .spei-layout {
-    grid-template-columns: 1fr;
-  }
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  End Section 'Sequia SPEI' -----------------------------------------------------*/
+/*=====================================================================================================================================================*/
 
-  .spei-mapa iframe {
-    height: 420px;
-  }
 
-  .spei-navegacion {
-    justify-content: center;
-  }
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  Start Section 'Sequia Combinado' ---------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+.panel-drought-combined {
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
 }
+
+.combined-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.combined-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.combined-controls h3 {
+  font-size: 1.2rem;
+  color: #B54900;
+  margin-bottom: 0.5rem;
+}
+
+.combined-navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.combined-navigation button {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.combined-navigation button:hover {
+  background-color: #B54900;
+  color: #fff;
+}
+
+.combined-message p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.combined-map iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  End Section 'Sequia Combinado' -----------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+
+
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  Start Section '' ---------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
+
+
+/*=====================================================================================================================================================*/
+/*--------------------------------------------------------------  End Section '' -----------------------------------------------------*/
+/*=====================================================================================================================================================*/
+
